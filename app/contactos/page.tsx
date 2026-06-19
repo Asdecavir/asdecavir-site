@@ -36,6 +36,27 @@ export default function ContactosPage() {
               <a href={`mailto:${siteConfig.email}`} className="contact-email">
                 {siteConfig.email}
               </a>
+
+              <div style={{marginTop: 30 }}>
+                <p className="kicker">Telefone</p>
+
+                <a href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}
+                 className="contact-phone"
+                 >
+                  {siteConfig.phone}
+                </a>
+              </div>
+
+              <div style={{marginTop: 34 }}>
+                <a
+                  href={siteConfig.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whatsapp-button"
+                >
+                  Contactar via WhatsApp
+                </a>
+              </div>
             </div>
 
             <div style={{ marginTop: 34 }}>

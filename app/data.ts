@@ -1,7 +1,9 @@
 export const siteConfig = {
   bandName: "ÁsDeCáVir",
   slogan: "Rock Português ao Vivo",
-  email: "contacto@asdecavir.pt",
+  email: "asdecavir.booking@gmail.com",
+  phone: "+351 963 444 556",
+  whatsapp: "https://wa.me/351963444556",
 
   social: {
     facebook: "https://www.facebook.com/asdecavir.oficial/",
