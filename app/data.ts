@@ -28,43 +28,97 @@ export const siteConfig = {
     "Rock em português que vive a música com alma e entrega cada tema como se fosse um original.",
 
   concerts: [
-    {
-      date: "11 Julho",
-      venue: "GM Rodar Lento",
-      city: "Cercal do Alentejo",
-      ticketLink: "#",
-    },
-    {
-      date: "1 Agosto",
-      venue: "Festa de Fontes",
-      city: "Fontes / Abrantes",
-      ticketLink: "#",
-    },
-    {
-      date: "5 Setembro",
-      venue: "Sunset Alfragide",
-      city: "Alfragide",
-      ticketLink: "#",
-    },
-    {
-      date: "5 Setembro",
-      venue: "Festa privada",
-      city: "Dona Maria / Caneças",
-      ticketLink: "#",
-    },
-    {
-        date: "12 Setembro",
-        venue: "GM CA100h",
-        city: "São Marcos / Cacém",
-        ticketLink: "#",
-    },
-    {
-        date: "31 Outubro",
-        venue: "Insólito Bar",
-        city: "Sobreiro / Mafra",
-        ticketLink: "#",
-    }
-  ],
+{
+  date: "17 Janeiro 2026",
+  venue: "Insólito Bar",
+  city: "Mafra",
+  completed: true,
+},
+{
+  date: "14 Março 2026",
+  venue: "Insólito Bar",
+  city: "Mafra",
+  completed: true,
+},
+{
+  date: "28 Março 2026",
+  venue: "Xentra Bar",
+  city: "Sintra",
+  completed: true,
+},
+{
+  date: "02 Abril 2026",
+  venue: "OldPub",
+  city: "Setúbal",
+  completed: true,
+},
+{
+  date: "18 Abril 2026",
+  venue: "Ginástica",
+  city: "Casal de Cambra",
+  completed: true,
+},
+{
+  date: "24 Abril 2026",
+  venue: "Nirvana Estúdios",
+  city: "Barcarena",
+  completed: true,
+},
+{
+  date: "23 Maio 2026",
+  venue: "Parreirinha",
+  city: "Bobadela",
+  completed: true,
+},
+{
+  date: "29 Maio 2026",
+  venue: "Skal",
+  city: "Setúbal",
+  completed: true,
+},
+{
+  date: "12 Junho 2026",
+  venue: "Theatro Club",
+  city: "São Marcos / Cacém",
+  completed: true,
+},
+{
+  date: "11 Julho 2026",
+  venue: "GM Rodar Lento",
+  city: "Cercal do Alentejo",
+  completed: false,
+},
+{
+  date: "01 Agosto 2026",
+  venue: "Festa de Fontes",
+  city: "Fontes / Abrantes",
+  completed: false,
+},
+{
+  date: "05 Setembro 2026",
+  venue: "Alfragide",
+  city: "Alfragide",
+  completed: false,
+},
+{
+  date: "05 Setembro 2026",
+  venue: "Festa Privada",
+  city: "D. Maria",
+  completed: false,
+},
+{
+  date: "12 Setembro 2026",
+  venue: "GM CA100h",
+  city: "São Marcos / Cacém",
+  completed: false,
+},
+{
+  date: "31 Outubro 2026",
+  venue: "Insólito Bar",
+  city: "Mafra",
+  completed: false,
+},
+],
 
   presskitFiles: [
     {

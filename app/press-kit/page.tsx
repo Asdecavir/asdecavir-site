@@ -7,57 +7,80 @@ export default function PressKitPage() {
     <main className="site-shell">
       <Header />
 
-      <section className="section">
+      <section className="section cobra-page-section">
         <div className="container">
           <div className="section-title">
             <span className="line"></span>
-            <h1>Press Kit</h1>
-            <img
-              src={siteConfig.images.logoSmall}
-              alt="Logótipo ÁsDeCáVir"
-              className="small-logo"
-            />
+            <h1>Cobra Tour 2026</h1>
           </div>
 
-          <div className="cards-grid">
-            {siteConfig.concerts.map((concert) => (
-              <article className="event-card" key={`${concert.date}-${concert.venue}`}>
-                <div className="event-date">{concert.date}</div>
-                <div className="event-venue">{concert.venue}</div>
-                <div className="event-city">{concert.city}</div>
+          <div className="cobra-poster-area">
+            <div className="cobra-board">
+              <img
+                src="/images/logo-cobra.png"
+                alt=""
+                className="cobra-board-watermark"
+              />
 
-                <a className="button" href={concert.ticketLink}>
-                  Ver Detalhes
-                </a>
-              </article>
-            ))}
+              <div className="cobra-board-content">
+                <p className="cobra-board-kicker">Agenda ao vivo</p>
+                <h2>Cobra Tour 2026</h2>
+
+                <div className="cobra-dates-list">
+  {siteConfig.concerts.map((concert) => (
+    <div
+      key={`${concert.date}-${concert.venue}-${concert.city}`}
+      className={`cobra-date-row ${
+        concert.completed ? "completed" : ""
+      }`}
+    >
+      <div className="cobra-date">
+        {concert.date}
+      </div>
+
+      <div className="cobra-venue">
+        {concert.venue}
+      </div>
+
+      <div className="cobra-city">
+        {concert.city}
+      </div>
+    </div>
+  ))}
+</div>
+              </div>
+            </div>
+
+            <div className="cobra-band-image-wrap">
+              <img
+                src="/images/banda-datas.png"
+                alt="Banda ÁsDeCáVir"
+                className="cobra-band-image"
+              />
+            </div>
           </div>
 
-          <div className="section" style={{ paddingBottom: 0 }}>
+          <div className="presskit-section">
+            <div className="section-title">
+              <span className="line"></span>
+              <h2>Press Kit</h2>
+            </div>
+
             <div className="press-grid">
               <div>
-                <h2>Biografia</h2>
+                <h3>Sobre a Banda</h3>
                 <p className="text">{siteConfig.biography}</p>
-
-                <div className="download-list" style={{ marginTop: 28 }}>
-                  {siteConfig.presskitFiles.map((item) => (
-                    <a className="button" href={item.file} download key={item.title}>
-                      Baixar {item.title}
-                    </a>
-                  ))}
-                </div>
               </div>
 
               <div>
-                <h2>Música</h2>
+                <h3>Downloads</h3>
 
-                <div className="video-wrapper" style={{ marginTop: 20 }}>
-                  <iframe
-                    src={siteConfig.youtubePromoEmbed}
-                    title="Música ÁsDeCáVir"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
+                <div className="download-list">
+                  {siteConfig.presskitFiles.map((item) => (
+                    <a className="button" href={item.file} key={item.title}>
+                      Download {item.title}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
