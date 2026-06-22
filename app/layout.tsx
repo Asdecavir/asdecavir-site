@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "ÁsDeCáVir | Rock Português ao Vivo",
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body>{children}</body>
+      <body>{children}<WhatsAppButton /></body>
     </html>
   );
 }

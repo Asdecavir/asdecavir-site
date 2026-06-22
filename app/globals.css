@@ -384,6 +384,7 @@ a {
   .hero-logo {
     width: 96vw;
   }
+}
 
   .whatsapp-button { 
     display:inline-flex;
@@ -407,5 +408,60 @@ a {
     background: #1fb855;
     box-shadow: 0 0 28px rgba(37, 211, 102, 0.55);
 }
-  
+
+.whatsapp-floating-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display:inline-flex;
+    align-items:center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 0 22px;
+    border-radius: 999px;
+    background: #25D366;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 24px rgba(37, 211, 102, 0.45);
+    transition: 0.2s ease;
+}
+
+.whatsapp-floating-button:hover {
+    transform: translateY(-3px);
+    background: #1fb855;
+    box-shadow: 0 0 34px rgba(37, 211, 102, 0.65);
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #25d366;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.whatsapp-text {
+  display:inline-block;
+}
+
+@media (max-width: 520px) {
+  .whatsapp-floating-button {
+    right: 18px;
+    bottom: 18px;
+    padding: 0;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
 }
