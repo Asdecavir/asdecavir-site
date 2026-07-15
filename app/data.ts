@@ -139,7 +139,7 @@ export const siteConfig = {
     },
     {
       title: "Notas de Imprensa",
-      file: "/presskit/notas-imprensa.pdf",
+      file: "/presskit/Proposta.pdf",
     },
     {
       title: "Rider Técnico",
