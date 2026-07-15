@@ -1,5 +1,3 @@
-import { completeHardNavigation } from "next/dist/client/components/segment-cache/navigation";
-
 export const siteConfig = {
   bandName: "ÁsDeCáVir",
   slogan: "Rock Português ao Vivo",
@@ -98,10 +96,10 @@ export const siteConfig = {
 },
 {
   date: "08 Agosto 2026",
-  venue: "Xentra Bar", ",
+  venue: "Xentra Bar",
   city: "Sintra",
   completed: false,
-}
+},
 {
   date: "15 Agosto 2026",
   venue: "Festa de Casa Branca",
@@ -121,11 +119,11 @@ export const siteConfig = {
   completed: false,
 },
 {
-  Date: "24 Outubro 2026",
+  date: "24 Outubro 2026",
   venue: "Xentra Bar",
   city: "Sintra",
   completed: false,
-}
+},
 {
   date: "31 Outubro 2026",
   venue: "Insólito Bar",
