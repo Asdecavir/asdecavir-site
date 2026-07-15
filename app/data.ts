@@ -138,7 +138,7 @@ export const siteConfig = {
       file: "/presskit/biografia.pdf",
     },
     {
-      title: "Notas de Imprensa",
+      title: "Proposta Comercial",
       file: "/presskit/Proposta.pdf",
     },
     {
