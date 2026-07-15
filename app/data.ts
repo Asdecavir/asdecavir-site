@@ -1,3 +1,5 @@
+import { completeHardNavigation } from "next/dist/client/components/segment-cache/navigation";
+
 export const siteConfig = {
   bandName: "ÁsDeCáVir",
   slogan: "Rock Português ao Vivo",
@@ -66,13 +68,13 @@ export const siteConfig = {
 },
 {
   date: "23 Maio 2026",
-  venue: "Parreirinha",
+  venue: "Quinta da Parreirinha",
   city: "Bobadela",
   completed: true,
 },
 {
   date: "29 Maio 2026",
-  venue: "Skal",
+  venue: "SkalPub",
   city: "Setúbal",
   completed: true,
 },
@@ -86,7 +88,7 @@ export const siteConfig = {
   date: "11 Julho 2026",
   venue: "GM Rodar Lento",
   city: "Cercal do Alentejo",
-  completed: false,
+  completed: true,
 },
 {
   date: "01 Agosto 2026",
@@ -95,9 +97,15 @@ export const siteConfig = {
   completed: false,
 },
 {
-  date: "05 Setembro 2026",
-  venue: "Alfragide",
-  city: "Alfragide",
+  date: "08 Agosto 2026",
+  venue: "Xentra Bar", ",
+  city: "Sintra",
+  completed: false,
+}
+{
+  date: "15 Agosto 2026",
+  venue: "Festa de Casa Branca",
+  city: "Casa Branca / Sousel",
   completed: false,
 },
 {
@@ -112,6 +120,12 @@ export const siteConfig = {
   city: "São Marcos / Cacém",
   completed: false,
 },
+{
+  Date: "24 Outubro 2026",
+  venue: "Xentra Bar",
+  city: "Sintra",
+  completed: false,
+}
 {
   date: "31 Outubro 2026",
   venue: "Insólito Bar",
